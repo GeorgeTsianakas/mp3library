@@ -18,14 +18,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "mp3")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Mp3.findAll", query = "SELECT m FROM Mp3 m")
-    , @NamedQuery(name = "Mp3.findById", query = "SELECT m FROM Mp3 m WHERE m.id = :id")
-    , @NamedQuery(name = "Mp3.findByTitle", query = "SELECT m FROM Mp3 m WHERE m.title = :title")
-    , @NamedQuery(name = "Mp3.findByAlbum", query = "SELECT m FROM Mp3 m WHERE m.album = :album")
-    , @NamedQuery(name = "Mp3.findByArtist", query = "SELECT m FROM Mp3 m WHERE m.artist = :artist")
-    , @NamedQuery(name = "Mp3.findByReleaseyear", query = "SELECT m FROM Mp3 m WHERE m.releaseyear = :releaseyear")
-    , @NamedQuery(name = "Mp3.findByFilename", query = "SELECT m FROM Mp3 m WHERE m.filename = :filename")
-    , @NamedQuery(name = "Mp3.findByPhotofilename", query = "SELECT m FROM Mp3 m WHERE m.photofilename = :photofilename")})
+        @NamedQuery(name = "Mp3.findAll", query = "SELECT m FROM Mp3 m")
+        , @NamedQuery(name = "Mp3.findById", query = "SELECT m FROM Mp3 m WHERE m.id = :id")
+        , @NamedQuery(name = "Mp3.findByTitle", query = "SELECT m FROM Mp3 m WHERE m.title = :title")
+        , @NamedQuery(name = "Mp3.findByAlbum", query = "SELECT m FROM Mp3 m WHERE m.album = :album")
+        , @NamedQuery(name = "Mp3.findByArtist", query = "SELECT m FROM Mp3 m WHERE m.artist = :artist")
+        , @NamedQuery(name = "Mp3.findByReleaseyear", query = "SELECT m FROM Mp3 m WHERE m.releaseyear = :releaseyear")
+        , @NamedQuery(name = "Mp3.findByFilename", query = "SELECT m FROM Mp3 m WHERE m.filename = :filename")
+        , @NamedQuery(name = "Mp3.findByPhotofilename", query = "SELECT m FROM Mp3 m WHERE m.photofilename = :photofilename")})
 public class Mp3 implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -174,5 +174,5 @@ public class Mp3 implements Serializable {
     public String toString() {
         return "com.mp3project.model.Mp3[ id=" + id + " ]";
     }
-    
+
 }
